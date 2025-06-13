@@ -1,0 +1,22 @@
+{
+  "name": "codeforces-submission-downloader",
+  "version": "1.0.0",
+  "description": "Chrome extension to download all Codeforces submissions in a ZIP file",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/codeforces-submission-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/codeforces-submission-downloader/issues"
+  },
+  "homepage": "https://github.com/yourusername/codeforces-submission-downloader#readme",
+  "keywords": [
+    "codeforces",
+    "chrome-extension",
+    "competitive-programming",
+    "downloader"
+  ]
+}
