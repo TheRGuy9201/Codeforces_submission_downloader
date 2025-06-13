@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Submission Downloader",
+  "version": "1.0",
+  "description": "Download all submissions from a Codeforces account",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://codeforces.com/*"
+  ],  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/*"],
+      "js": ["jszip.min.js", "getSubmissionSourceCode.js", "content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CF Submission Downloader",
+    "default_icon": "icon48.svg"
+  },
+  "icons": {
+    "48": "icon48.svg",
+    "128": "icon48.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": ["jszip.min.js"],
+    "matches": ["https://codeforces.com/*"]
+  }]
+}
